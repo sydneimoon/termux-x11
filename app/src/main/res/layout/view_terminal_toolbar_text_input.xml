@@ -7,7 +7,7 @@
         android:id="@+id/terminal_toolbar_back_button"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="←"
+        android:text="❮ back"
         tools:ignore="HardcodedText" />
     <com.termux.x11.EditText
         android:id="@+id/terminal_toolbar_text_input"
@@ -22,5 +22,6 @@
         android:paddingTop="0dp"
         android:textCursorDrawable="@null"
         android:paddingBottom="0dp"
+        android:background="@drawable/edittext_background"
         tools:ignore="LabelFor" />
 </LinearLayout>

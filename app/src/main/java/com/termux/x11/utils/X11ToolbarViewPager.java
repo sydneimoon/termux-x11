@@ -77,9 +77,12 @@ public class X11ToolbarViewPager {
                 });
 
                 back.setOnClickListener(v -> mActivity.getTerminalToolbarViewPager().setCurrentItem(0, true));
-                back.setTextColor(0xFFFFFFFF);
+                //back.setTextColor(0xFFFFFFFF);
+                back.setTextColor(0xAAFFFFFF);
+                back.setTextSize(18);
                 back.setPadding(0, 0, 0, 0);
-                back.setBackground(new ColorDrawable(Color.BLACK) {
+                //back.setBackground(new ColorDrawable(Color.BLACK) {
+                back.setBackground(new ColorDrawable(Color.TRANSPARENT) {
                     public boolean isStateful() {
                         return true;
                     }
@@ -90,7 +93,8 @@ public class X11ToolbarViewPager {
                 back.setOnTouchListener((view, event) -> {
                     switch (event.getAction()) {
                         case MotionEvent.ACTION_DOWN:
-                            view.setBackgroundColor(0xFF7F7F7F);
+                            //view.setBackgroundColor(0xFF7F7F7F);
+                            view.setBackgroundColor(0x00000000);
                             break;
 
                         case MotionEvent.ACTION_UP:
